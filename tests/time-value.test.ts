@@ -407,6 +407,15 @@ describe("TimeDuration class", () => {
     expect(duration.toString()).toBe("04:05:06");
   });
 
+  test("can reset", () => {
+    const duration = TimeDuration.from("03:06:09");
+
+    expect(duration.toString()).toBe("03:06:09");
+
+    duration.reset();
+    expect(duration.toString()).toBe("00:00:00");
+  });
+
   test("can update hours", () => {
     const duration = TimeDuration.from("03:06:09");
 

@@ -162,9 +162,7 @@ export class TimeDuration {
    */
   set hours(hours: number) {
     if (hours < 0) {
-      this._hours = 0;
-      this._minutes = 0;
-      this._seconds = 0;
+      this.reset();
     } else {
       this._hours = hours;
     }
@@ -220,6 +218,16 @@ export class TimeDuration {
     if (parsed.seconds !== undefined) this.seconds = parsed.seconds;
 
     return this;
+  }
+
+  /**
+   * Sets duration to 00:00:00.
+   * @memberof TimeDuration
+   */
+  public reset() {
+    this._hours = 0;
+    this._minutes = 0;
+    this._seconds = 0;
   }
 
   /**

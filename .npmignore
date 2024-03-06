@@ -1,0 +1,11 @@
+node_modules/
+src/
+tests/
+.github/
+.changeset/
+
+.gitignore
+.npmignore
+.prettierrc
+jest.config.js
+tsconfig.json

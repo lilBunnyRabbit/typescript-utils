@@ -1,0 +1,2 @@
+- [ ] Include code from `depricated-typescript-utils`
+- [ ] Types testing

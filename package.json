@@ -1,20 +1,20 @@
 {
-  "name": "@lilbunnyrabbit/npm-package-template",
+  "name": "@lilbunnyrabbit/utils",
   "version": "0.0.0",
-  "description": "Template repository for creating `npm` packages.",
+  "description": "TypeScript library containing a collection of utility classes, functions, etc.",
   "keywords": [
     "node",
     "npm",
     "javascript",
     "typescript"
   ],
-  "homepage": "https://github.com/lilBunnyRabbit/npm-package-template#readme",
+  "homepage": "https://github.com/lilBunnyRabbit/typescript-utils#readme",
   "bugs": {
-    "url": "https://github.com/lilBunnyRabbit/npm-package-template/issues"
+    "url": "https://github.com/lilBunnyRabbit/typescript-utils/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lilBunnyRabbit/npm-package-template.git"
+    "url": "https://github.com/lilBunnyRabbit/typescript-utils.git"
   },
   "license": "MIT",
   "author": "Andraž Mesarič-Sirec <amesaricsirec@gmail.com>",
@@ -30,6 +30,14 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "default": "./dist/core/index.js"
+    },
+    "./modules": {
+      "types": "./dist/modules/index.d.ts",
+      "default": "./dist/modules/index.js"
+    },
     "./package.json": "./package.json"
   },
   "main": "./dist/index.js",
@@ -41,13 +49,15 @@
     "test": "jest",
     "changeset": "changeset",
     "prerelease": "npm run build",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "generate:docs": "typedoc"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "@types/jest": "^29.5.12",
     "rimraf": "^5.0.5",
     "ts-jest": "^29.1.2",
+    "typedoc": "^0.25.11",
     "typescript": "^5.4.2"
   },
   "engines": {

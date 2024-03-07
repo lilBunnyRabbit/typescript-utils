@@ -18,7 +18,7 @@
  * You can define the types of events it will handle using a {@link https://www.typescriptlang.org/ TypeScript} interface.
  *
  * ```ts
- * interface MyEvents {
+ * type MyEvents = {
  *   data: string;
  *   loaded: void;
  *   error: Error;
@@ -82,7 +82,7 @@
  * When extending, you can still take full advantage of the type safety and event handling features of the base class.
  *
  * ```ts
- * interface MyServiceEvents {
+ * type MyServiceEvents = {
  *   dataLoaded: string;
  *   error: Error;
  * }
@@ -134,7 +134,7 @@
  * @template TEmitter - The specific type of the {@link EventEmitter} instance to which the listener is bound.
  */
 export type EventListener<
-  TEvents extends Record<string | number | symbol, unknown>,
+  TEvents extends Record<PropertyKey, unknown>,
   TData,
   TEmitter extends EventEmitter<TEvents>
 > = (this: TEmitter, ...data: TData extends void ? [] : [data: TData]) => void | Promise<void>;
@@ -147,7 +147,7 @@ export type EventListener<
  *
  * @example
  * ```ts
- * interface MyEvents {
+ * type MyEvents = {
  *   data: string;
  *   loaded: void;
  *   error: Error;
@@ -156,7 +156,7 @@ export type EventListener<
  * const emitter = new EventEmitter<MyEvents>();
  * ```
  */
-export class EventEmitter<TEvents extends Record<string, unknown>> {
+export class EventEmitter<TEvents extends Record<PropertyKey, unknown>> {
   private _events: Partial<{
     [TType in keyof TEvents]: Array<EventListener<TEvents, TEvents[TType], this>>;
   }> = {};

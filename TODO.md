@@ -1,4 +1,2 @@
-- [ ] Docs
 - [ ] Include code from `depricated-typescript-utils`
-- [ ] Move local documentation to `/docs` or not?
 - [ ] Types testing

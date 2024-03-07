@@ -49,13 +49,15 @@
     "test": "jest",
     "changeset": "changeset",
     "prerelease": "npm run build",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "generate:docs": "typedoc"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "@types/jest": "^29.5.12",
     "rimraf": "^5.0.5",
     "ts-jest": "^29.1.2",
+    "typedoc": "^0.25.11",
     "typescript": "^5.4.2"
   },
   "engines": {

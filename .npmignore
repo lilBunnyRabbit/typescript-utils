@@ -3,6 +3,7 @@ src/
 tests/
 .github/
 .changeset/
+docs/
 
 .gitignore
 .npmignore

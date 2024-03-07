@@ -1,4 +1,13 @@
 /**
+ * The `type-guards` submodule within the core module offers a collection of type guards.
+ * Type guards are essential utilities that allow for more robust type checking and are crucial
+ * for ensuring type safety at runtime. These utilities enable developers to distinguish between types using conditional checks,
+ * thereby facilitating safer type assertions and operations on different types of data.
+ *
+ * @packageDocumentation
+ */
+
+/**
  * Checks if a value is undefined.
  *
  * @param value - The value to check.
@@ -60,13 +69,13 @@ export function isString(value: unknown): value is string {
 }
 
 /**
- * Checks if a value is an object.
+ * Checks if a value is a non-nullable object.
  *
  * @param value - The value to check.
- * @return `true` if the value is an `object`, `false` otherwise.
+ * @return `true` if the value is an `object` and is neither `undefined` nor `null`, `false` otherwise.
  */
 export function isObject(value: unknown): value is object {
-  return typeof value === "object" && !Array.isArray(value) && value !== null;
+  return typeof value === "object" && isNonNullable(value);
 }
 
 /**
@@ -94,7 +103,7 @@ export function isEmptyString(value: unknown): value is "" {
 }
 
 /**
- * Checks if a value is an array.
+ * Checks if a value is an array. Doesn't include typed arrays.
  *
  * @template TType - Type of the array elements.
  * @param value - The value to check.

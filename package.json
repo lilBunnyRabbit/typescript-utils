@@ -1,20 +1,20 @@
 {
-  "name": "@lilbunnyrabbit/npm-package-template",
+  "name": "@lilbunnyrabbit/utils",
   "version": "0.0.0",
-  "description": "Template repository for creating `npm` packages.",
+  "description": "TypeScript library containing a collection of utility classes, functions, etc.",
   "keywords": [
     "node",
     "npm",
     "javascript",
     "typescript"
   ],
-  "homepage": "https://github.com/lilBunnyRabbit/npm-package-template#readme",
+  "homepage": "https://github.com/lilBunnyRabbit/typescript-utils#readme",
   "bugs": {
-    "url": "https://github.com/lilBunnyRabbit/npm-package-template/issues"
+    "url": "https://github.com/lilBunnyRabbit/typescript-utils/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lilBunnyRabbit/npm-package-template.git"
+    "url": "https://github.com/lilBunnyRabbit/typescript-utils.git"
   },
   "license": "MIT",
   "author": "Andraž Mesarič-Sirec <amesaricsirec@gmail.com>",

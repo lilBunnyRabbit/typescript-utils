@@ -1,7 +1,7 @@
 # NPM Package Template
 
-[![npm version](https://img.shields.io/npm/v/@lilbunnyrabbit/<name>.svg)](https://www.npmjs.com/package/@lilbunnyrabbit/<name>)
-[![npm downloads](https://img.shields.io/npm/dt/@lilbunnyrabbit/<name>.svg)](https://www.npmjs.com/package/@lilbunnyrabbit/<name>)
+[![npm version](https://img.shields.io/npm/v/@lilbunnyrabbit/utils.svg)](https://www.npmjs.com/package/@lilbunnyrabbit/utils)
+[![npm downloads](https://img.shields.io/npm/dt/@lilbunnyrabbit/utils.svg)](https://www.npmjs.com/package/@lilbunnyrabbit/utils)
 
 This repository serves as a template for creating npm packages, simplifying the setup and development process for your npm packages. Replace all the `<name>` with the name of the repository and/or package.
 
@@ -10,7 +10,7 @@ This repository serves as a template for creating npm packages, simplifying the 
 To use this package in your project, run:
 
 ```sh
-npm i @lilbunnyrabbit/<name>
+npm i @lilbunnyrabbit/utils
 ```
 
 ## Development
@@ -22,8 +22,8 @@ This section provides a guide for developers to set up the project environment a
 Clone the repository and install dependencies:
 
 ```sh
-git clone https://github.com/lilBunnyRabbit/npm-package-template.git
-cd npm-package-template
+git clone https://github.com/lilBunnyRabbit/typescript-utils.git
+cd typescript-utils
 npm install
 ```
 

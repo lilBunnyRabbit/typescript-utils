@@ -23,7 +23,7 @@ jobs:
           node-version: 20.x
 
       - name: Install Dependencies
-        run: npm ci --force # --force is required for typedoc unitll it supports latest TypeScript
+        run: npm ci
 
       - name: Run tests
         run: npm test

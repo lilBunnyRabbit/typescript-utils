@@ -1,5 +1,11 @@
 # @lilbunnyrabbit/utils
 
+## 0.0.2
+
+### Patch Changes
+
+- b4b545d: Downgrades `typescript` to `5.3.3` & Config fixes
+
 ## 0.0.1
 
 ### Patch Changes

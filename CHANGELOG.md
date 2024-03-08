@@ -1,5 +1,11 @@
 # @lilbunnyrabbit/utils
 
+## 0.0.3
+
+### Patch Changes
+
+- 128f89f: #5 Exports fix
+
 ## 0.0.2
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@lilbunnyrabbit/utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TypeScript library containing a collection of utility classes, functions, etc.",
   "keywords": [
     "node",

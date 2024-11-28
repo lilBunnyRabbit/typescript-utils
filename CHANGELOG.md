@@ -1,5 +1,11 @@
 # @lilbunnyrabbit/utils
 
+## 0.1.0
+
+### Minor Changes
+
+- e9e9712: Removes EventEmitter and Optional module
+
 ## 0.0.3
 
 ### Patch Changes
